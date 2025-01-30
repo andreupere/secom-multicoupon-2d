@@ -1,0 +1,20 @@
+#Customer redeems coupons to the merchant
+#Thu Mar 07 16:51:57 CET 2013
+#-
+#XML
+#online verification active? true
+#Time in miliseconds (ms)
+#t1 	 receiving M1
+#t2 	 decoding M1
+#t3 	 managing M1 and building M2
+#t4 	 encoding M2
+#t5 	 sending M2
+#t6 	 receiving M2
+#t7 	 decoding M3
+#t8 	 managing M3 and building M4
+#t9 	 encoding M4
+#t10 	 sending M4
+#proto 	 it 	 t1 	 t2 	 t3 	 t4 	 t5 	 t6 	 t7 	 t8 	 t9 	 10
+redeem	0	33	73	502	2	0	20	6	83	1	0	
+redeem	0	35	15	82	1	0	22	2	54	0	1	
+redeem	0	34	15	63	0	0	21	2	51	1	0	

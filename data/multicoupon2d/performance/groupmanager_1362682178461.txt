@@ -1,0 +1,12 @@
+#Customer registers to the group manager
+#Thu Mar 07 19:49:38 CET 2013
+#-
+#XML
+#Time in miliseconds (ms)
+#t1 	 receiving M1
+#t2 	 decoding M1
+#t3 	 managing M1 and building M2
+#t4 	 encoding M2
+#t5 	 sending M2
+#proto 	 it 	 t1 	 t2 	 t3 	 t4 	 t5
+join	0	51	33	3	5	0	

@@ -1,0 +1,73 @@
+<multicoupon-2d>
+   <multicoupons-list>
+      <multicoupon class="cat.uib.secom.multicoupon2d.common.msg.impl.MulticouponImpl" j="0">
+         <coupons-list>
+            <coupon class="cat.uib.secom.multicoupon2d.common.msg.impl.CouponImpl">
+               <j>0</j>
+               <hash>1154999047654914837827913696715960939310906659545</hash>
+               <i>0</i>
+            </coupon>
+            <coupon class="cat.uib.secom.multicoupon2d.common.msg.impl.CouponImpl">
+               <j>0</j>
+               <hash>844147779416263484559200597574859539166137626480</hash>
+               <i>1</i>
+            </coupon>
+            <coupon class="cat.uib.secom.multicoupon2d.common.msg.impl.CouponImpl">
+               <j>0</j>
+               <hash>1117457759904173702290351681353085248472684530502</hash>
+               <i>2</i>
+            </coupon>
+            <coupon class="cat.uib.secom.multicoupon2d.common.msg.impl.CouponImpl">
+               <j>0</j>
+               <hash>646199752673190440401695563831027218149952021174</hash>
+               <i>3</i>
+            </coupon>
+            <coupon class="cat.uib.secom.multicoupon2d.common.msg.impl.CouponImpl">
+               <j>0</j>
+               <hash>1286130276975971968172278436098001289595885735249</hash>
+               <i>4</i>
+            </coupon>
+            <coupon class="cat.uib.secom.multicoupon2d.common.msg.impl.CouponImpl">
+               <j>0</j>
+               <hash>191200578999932906780667308550062521033318251032</hash>
+               <i>5</i>
+            </coupon>
+            <coupon class="cat.uib.secom.multicoupon2d.common.msg.impl.CouponImpl">
+               <j>0</j>
+               <hash>1350073530327768654575141719156216700191485016281</hash>
+               <i>6</i>
+            </coupon>
+            <coupon class="cat.uib.secom.multicoupon2d.common.msg.impl.CouponImpl">
+               <j>0</j>
+               <hash>276692479205458648902705114359722891448755355862</hash>
+               <i>7</i>
+            </coupon>
+            <coupon class="cat.uib.secom.multicoupon2d.common.msg.impl.CouponImpl">
+               <j>0</j>
+               <hash>1144712749946889764231561850575940499167306577673</hash>
+               <i>8</i>
+            </coupon>
+            <coupon class="cat.uib.secom.multicoupon2d.common.msg.impl.CouponImpl">
+               <j>0</j>
+               <hash>758618417021136995312619079403965325285226663513</hash>
+               <i>9</i>
+            </coupon>
+            <coupon class="cat.uib.secom.multicoupon2d.common.msg.impl.CouponImpl">
+               <j>0</j>
+               <hash>1413891755966271346428892775228175918799076416631</hash>
+               <i>10</i>
+            </coupon>
+            <coupon class="cat.uib.secom.multicoupon2d.common.msg.impl.CouponImpl">
+               <j>0</j>
+               <hash>1624512808507131287526869428749912322427069182</hash>
+               <i>11</i>
+            </coupon>
+            <coupon class="cat.uib.secom.multicoupon2d.common.msg.impl.CouponImpl">
+               <j>0</j>
+               <hash>1334113489455967051413201799799711506473372509691</hash>
+               <i>12</i>
+            </coupon>
+         </coupons-list>
+      </multicoupon>
+   </multicoupons-list>
+</multicoupon-2d>

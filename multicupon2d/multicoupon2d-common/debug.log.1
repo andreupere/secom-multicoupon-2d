@@ -1,0 +1,738 @@
+DEBUG main 2012-04-30 11:00:38,919 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha512, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512)
+DEBUG main 2012-04-30 11:00:38,919 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha512 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512
+DEBUG main 2012-04-30 11:00:38,927 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP: A simple resolver for requests to HTTP space
+DEBUG main 2012-04-30 11:00:38,930 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverLocalFilesystem: A simple resolver for requests to the local file system
+DEBUG main 2012-04-30 11:00:38,931 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverFragment: A simple resolver for requests of same-document URIs
+DEBUG main 2012-04-30 11:00:38,931 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverXPointer: A simple resolver for requests of XPointer fragents
+DEBUG main 2012-04-30 11:00:38,934 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver: Can extract RSA public keys
+DEBUG main 2012-04-30 11:00:38,935 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver: Can extract DSA public keys
+DEBUG main 2012-04-30 11:00:38,935 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509CertificateResolver: Can extract public keys from X509 certificates
+DEBUG main 2012-04-30 11:00:38,936 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver: Uses an X509v3 SubjectKeyIdentifier extension to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:00:38,937 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver: Resolves keys and certificates using ResourceResolvers
+DEBUG main 2012-04-30 11:00:38,938 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver: Uses an X509 SubjectName to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:00:38,939 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver: Uses an X509 IssuerName and IssuerSerial to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:00:38,940 Init - Now I try to bind prefixes:
+DEBUG main 2012-04-30 11:00:38,941 Init - Now I try to bind ds to http://www.w3.org/2000/09/xmldsig#
+DEBUG main 2012-04-30 11:00:38,941 Init - Now I try to bind xenc to http://www.w3.org/2001/04/xmlenc#
+DEBUG main 2012-04-30 11:00:38,941 Init - Now I try to bind experimental to http://www.xmlsecurity.org/experimental#
+DEBUG main 2012-04-30 11:00:38,941 Init - Now I try to bind dsig-xpath-old to http://www.w3.org/2002/04/xmldsig-filter2
+DEBUG main 2012-04-30 11:00:38,941 Init - Now I try to bind dsig-xpath to http://www.w3.org/2002/06/xmldsig-filter2
+DEBUG main 2012-04-30 11:00:38,941 Init - Now I try to bind ec to http://www.w3.org/2001/10/xml-exc-c14n#
+DEBUG main 2012-04-30 11:00:38,941 Init - Now I try to bind xx to http://www.nue.et-inf.uni-siegen.de/~geuer-pollmann/#xpathFilter
+DEBUG main 2012-04-30 11:00:38,942 Init - XX_init                             102 ms
+DEBUG main 2012-04-30 11:00:38,942 Init -   XX_prng                           0 ms
+DEBUG main 2012-04-30 11:00:38,942 Init -   XX_parsing                        12 ms
+DEBUG main 2012-04-30 11:00:38,942 Init -   XX_configure_i18n                 3 ms
+DEBUG main 2012-04-30 11:00:38,942 Init -   XX_configure_reg_c14n             25 ms
+DEBUG main 2012-04-30 11:00:38,942 Init -   XX_configure_reg_jcemapper        4 ms
+DEBUG main 2012-04-30 11:00:38,942 Init -   XX_configure_reg_keyInfo          6 ms
+DEBUG main 2012-04-30 11:00:38,942 Init -   XX_configure_reg_keyResolver      8 ms
+DEBUG main 2012-04-30 11:00:38,943 Init -   XX_configure_reg_prefixes         2 ms
+DEBUG main 2012-04-30 11:00:38,943 Init -   XX_configure_reg_resourceresolver 6 ms
+DEBUG main 2012-04-30 11:00:38,943 Init -   XX_configure_reg_sigalgos         19 ms
+DEBUG main 2012-04-30 11:00:38,943 Init -   XX_configure_reg_transforms       16 ms
+DEBUG main 2012-04-30 11:00:40,387 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:00:40,387 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:00:40,387 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:00:40,388 Transforms - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+DEBUG main 2012-04-30 11:00:40,388 Transform - Create URI "http://www.w3.org/2000/09/xmldsig#enveloped-signature" class "class org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature"
+DEBUG main 2012-04-30 11:00:40,388 Transform - The NodeList is null
+DEBUG main 2012-04-30 11:00:40,389 Transforms - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+DEBUG main 2012-04-30 11:00:40,390 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:00:40,400 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:00:40,400 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:00:40,400 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:00:40,400 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:00:40,401 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:00:40,401 ResourceResolver - I was asked to create a ResourceResolver and got 0
+DEBUG main 2012-04-30 11:00:40,401 ResourceResolver -  extra resolvers to my existing 4 system-wide resolvers
+DEBUG main 2012-04-30 11:00:40,402 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:00:40,402 ResolverDirectHTTP - quick fail for empty URIs and local ones
+DEBUG main 2012-04-30 11:00:40,402 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:00:40,402 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:00:40,402 ResolverFragment - State I can resolve reference: ""
+DEBUG main 2012-04-30 11:00:40,402 ResolverFragment - ResolverFragment with empty URI (means complete document)
+DEBUG main 2012-04-30 11:00:40,404 ElementProxy - setElement("Transforms", "")
+DEBUG main 2012-04-30 11:00:40,404 ElementProxy - setElement("Transform", "")
+DEBUG main 2012-04-30 11:00:40,427 ElementProxy - setElement("Signature", "")
+DEBUG main 2012-04-30 11:00:40,427 ElementProxy - setElement("SignedInfo", "")
+DEBUG main 2012-04-30 11:00:40,427 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:00:40,428 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:00:40,428 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:00:40,428 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:00:40,428 ElementProxy - setElement("KeyInfo", "")
+DEBUG main 2012-04-30 11:00:40,428 KeyInfo - Start getX509CertificateFromInternalResolvers() with 0 resolvers
+DEBUG main 2012-04-30 11:00:40,428 KeyInfo - I couldn't find a X509Certificate using the per-KeyInfo key resolvers
+DEBUG main 2012-04-30 11:00:40,429 KeyInfo - Start getX509CertificateFromStaticResolvers() with 7 resolvers
+DEBUG main 2012-04-30 11:00:40,429 RSAKeyValueResolver - Can I resolve X509Data
+DEBUG main 2012-04-30 11:00:40,429 RSAKeyValueResolver - Can I resolve KeyValue
+DEBUG main 2012-04-30 11:00:40,429 X509CertificateResolver - Can I resolve X509Data?
+DEBUG main 2012-04-30 11:00:40,429 X509CertificateResolver - Yes Sir, I can
+DEBUG main 2012-04-30 11:00:40,429 ElementProxy - setElement("X509Certificate", "")
+DEBUG main 2012-04-30 11:00:40,443 KeyInfo - I could find a X509Certificate using the system-wide key resolvers
+DEBUG main 2012-04-30 11:00:40,443 Manifest - verify 1 References
+DEBUG main 2012-04-30 11:00:40,443 Manifest - I am not requested to follow nested Manifests
+DEBUG main 2012-04-30 11:00:40,443 ElementProxy - setElement("Reference", "")
+DEBUG main 2012-04-30 11:00:40,444 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:00:40,444 ResourceResolver - I was asked to create a ResourceResolver and got 0
+DEBUG main 2012-04-30 11:00:40,444 ResourceResolver -  extra resolvers to my existing 4 system-wide resolvers
+DEBUG main 2012-04-30 11:00:40,444 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:00:40,444 ResolverDirectHTTP - quick fail for empty URIs and local ones
+DEBUG main 2012-04-30 11:00:40,444 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:00:40,444 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:00:40,445 ResolverFragment - State I can resolve reference: ""
+DEBUG main 2012-04-30 11:00:40,445 ResolverFragment - ResolverFragment with empty URI (means complete document)
+DEBUG main 2012-04-30 11:00:40,445 ElementProxy - setElement("Transforms", "")
+DEBUG main 2012-04-30 11:00:40,445 ElementProxy - setElement("Transform", "")
+INFO main 2012-04-30 11:00:40,446 Reference - Verification successful for URI ""
+DEBUG main 2012-04-30 11:00:40,446 Manifest - The Reference has Type 
+DEBUG main 2012-04-30 11:00:40,446 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:00:40,446 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:00:40,446 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:00:40,446 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:00:40,447 XMLSignature - SignatureMethodURI = http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:00:40,447 XMLSignature - jceSigAlgorithm    = SHA1withRSA
+DEBUG main 2012-04-30 11:00:40,447 XMLSignature - jceSigProvider     = SunRsaSign
+DEBUG main 2012-04-30 11:00:40,448 XMLSignature - PublicKey = Sun RSA public key, 1024 bits
+  modulus: 108967818427834787280858123127275108291807413798635639789560100094876581493192075929322383809567757643572326355829808355955819631095778571177502898947073834813011127179549715515978877219429043747463409878018639538660948543346340430287862985485146129677420862768770517059095074009293381420357044575788883639519
+  public exponent: 65537
+DEBUG main 2012-04-30 11:01:08,242 Init - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.c14n.implementations.Canonicalizer20010315OmitComments)
+DEBUG main 2012-04-30 11:01:08,245 Init - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315WithComments)
+DEBUG main 2012-04-30 11:01:08,247 Init - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments)
+DEBUG main 2012-04-30 11:01:08,247 Init - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments)
+DEBUG main 2012-04-30 11:01:08,252 Init - Transform.register(http://www.w3.org/2000/09/xmldsig#base64, org.apache.xml.security.transforms.implementations.TransformBase64Decode)
+DEBUG main 2012-04-30 11:01:08,252 Init - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.transforms.implementations.TransformC14N)
+DEBUG main 2012-04-30 11:01:08,253 Init - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NWithComments)
+DEBUG main 2012-04-30 11:01:08,254 Init - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.transforms.implementations.TransformC14NExclusive)
+DEBUG main 2012-04-30 11:01:08,254 Init - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NExclusiveWithComments)
+DEBUG main 2012-04-30 11:01:08,255 Init - Transform.register(http://www.w3.org/TR/1999/REC-xpath-19991116, org.apache.xml.security.transforms.implementations.TransformXPath)
+DEBUG main 2012-04-30 11:01:08,256 Init - Transform.register(http://www.w3.org/2000/09/xmldsig#enveloped-signature, org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature)
+DEBUG main 2012-04-30 11:01:08,257 Init - Transform.register(http://www.w3.org/TR/1999/REC-xslt-19991116, org.apache.xml.security.transforms.implementations.TransformXSLT)
+DEBUG main 2012-04-30 11:01:08,259 Init - Transform.register(http://www.w3.org/2002/04/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+DEBUG main 2012-04-30 11:01:08,259 Init - Transform.register(http://www.w3.org/2002/06/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+DEBUG main 2012-04-30 11:01:08,261 SignatureAlgorithm - Init() called
+DEBUG main 2012-04-30 11:01:08,263 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#dsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureDSA)
+DEBUG main 2012-04-30 11:01:08,266 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#dsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureDSA
+DEBUG main 2012-04-30 11:01:08,268 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#rsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1)
+DEBUG main 2012-04-30 11:01:08,268 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#rsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1
+DEBUG main 2012-04-30 11:01:08,269 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#hmac-sha1, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1)
+DEBUG main 2012-04-30 11:01:08,270 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#hmac-sha1 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1
+DEBUG main 2012-04-30 11:01:08,270 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-md5, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5)
+DEBUG main 2012-04-30 11:01:08,270 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-md5 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5
+DEBUG main 2012-04-30 11:01:08,271 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160)
+DEBUG main 2012-04-30 11:01:08,271 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160
+DEBUG main 2012-04-30 11:01:08,271 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256)
+DEBUG main 2012-04-30 11:01:08,271 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256
+DEBUG main 2012-04-30 11:01:08,272 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384)
+DEBUG main 2012-04-30 11:01:08,272 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha384 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384
+DEBUG main 2012-04-30 11:01:08,273 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512)
+DEBUG main 2012-04-30 11:01:08,273 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha512 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512
+DEBUG main 2012-04-30 11:01:08,273 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-md5, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5)
+DEBUG main 2012-04-30 11:01:08,273 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-md5 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5
+DEBUG main 2012-04-30 11:01:08,274 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160)
+DEBUG main 2012-04-30 11:01:08,274 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160
+DEBUG main 2012-04-30 11:01:08,274 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha256, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256)
+DEBUG main 2012-04-30 11:01:08,275 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha256 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256
+DEBUG main 2012-04-30 11:01:08,275 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha384, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384)
+DEBUG main 2012-04-30 11:01:08,275 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha384 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384
+DEBUG main 2012-04-30 11:01:08,276 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha512, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512)
+DEBUG main 2012-04-30 11:01:08,276 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha512 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512
+DEBUG main 2012-04-30 11:01:08,285 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP: A simple resolver for requests to HTTP space
+DEBUG main 2012-04-30 11:01:08,287 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverLocalFilesystem: A simple resolver for requests to the local file system
+DEBUG main 2012-04-30 11:01:08,288 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverFragment: A simple resolver for requests of same-document URIs
+DEBUG main 2012-04-30 11:01:08,289 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverXPointer: A simple resolver for requests of XPointer fragents
+DEBUG main 2012-04-30 11:01:08,291 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver: Can extract RSA public keys
+DEBUG main 2012-04-30 11:01:08,292 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver: Can extract DSA public keys
+DEBUG main 2012-04-30 11:01:08,293 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509CertificateResolver: Can extract public keys from X509 certificates
+DEBUG main 2012-04-30 11:01:08,294 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver: Uses an X509v3 SubjectKeyIdentifier extension to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:01:08,294 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver: Resolves keys and certificates using ResourceResolvers
+DEBUG main 2012-04-30 11:01:08,296 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver: Uses an X509 SubjectName to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:01:08,297 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver: Uses an X509 IssuerName and IssuerSerial to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:01:08,297 Init - Now I try to bind prefixes:
+DEBUG main 2012-04-30 11:01:08,298 Init - Now I try to bind ds to http://www.w3.org/2000/09/xmldsig#
+DEBUG main 2012-04-30 11:01:08,298 Init - Now I try to bind xenc to http://www.w3.org/2001/04/xmlenc#
+DEBUG main 2012-04-30 11:01:08,298 Init - Now I try to bind experimental to http://www.xmlsecurity.org/experimental#
+DEBUG main 2012-04-30 11:01:08,298 Init - Now I try to bind dsig-xpath-old to http://www.w3.org/2002/04/xmldsig-filter2
+DEBUG main 2012-04-30 11:01:08,298 Init - Now I try to bind dsig-xpath to http://www.w3.org/2002/06/xmldsig-filter2
+DEBUG main 2012-04-30 11:01:08,299 Init - Now I try to bind ec to http://www.w3.org/2001/10/xml-exc-c14n#
+DEBUG main 2012-04-30 11:01:08,299 Init - Now I try to bind xx to http://www.nue.et-inf.uni-siegen.de/~geuer-pollmann/#xpathFilter
+DEBUG main 2012-04-30 11:01:08,299 Init - XX_init                             105 ms
+DEBUG main 2012-04-30 11:01:08,299 Init -   XX_prng                           0 ms
+DEBUG main 2012-04-30 11:01:08,299 Init -   XX_parsing                        19 ms
+DEBUG main 2012-04-30 11:01:08,299 Init -   XX_configure_i18n                 3 ms
+DEBUG main 2012-04-30 11:01:08,299 Init -   XX_configure_reg_c14n             20 ms
+DEBUG main 2012-04-30 11:01:08,299 Init -   XX_configure_reg_jcemapper        4 ms
+DEBUG main 2012-04-30 11:01:08,300 Init -   XX_configure_reg_keyInfo          15 ms
+DEBUG main 2012-04-30 11:01:08,300 Init -   XX_configure_reg_keyResolver      8 ms
+DEBUG main 2012-04-30 11:01:08,300 Init -   XX_configure_reg_prefixes         2 ms
+DEBUG main 2012-04-30 11:01:08,300 Init -   XX_configure_reg_resourceresolver 6 ms
+DEBUG main 2012-04-30 11:01:08,300 Init -   XX_configure_reg_sigalgos         17 ms
+DEBUG main 2012-04-30 11:01:08,300 Init -   XX_configure_reg_transforms       11 ms
+DEBUG main 2012-04-30 11:01:09,734 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:01:09,734 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:01:09,734 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:01:09,735 Transforms - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+DEBUG main 2012-04-30 11:01:09,735 Transform - Create URI "http://www.w3.org/2000/09/xmldsig#enveloped-signature" class "class org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature"
+DEBUG main 2012-04-30 11:01:09,736 Transform - The NodeList is null
+DEBUG main 2012-04-30 11:01:09,736 Transforms - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+DEBUG main 2012-04-30 11:01:09,738 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:01:09,747 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:01:09,747 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:01:09,747 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:01:09,748 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:01:09,748 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:01:09,748 ResourceResolver - I was asked to create a ResourceResolver and got 0
+DEBUG main 2012-04-30 11:01:09,749 ResourceResolver -  extra resolvers to my existing 4 system-wide resolvers
+DEBUG main 2012-04-30 11:01:09,749 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:01:09,749 ResolverDirectHTTP - quick fail for empty URIs and local ones
+DEBUG main 2012-04-30 11:01:09,749 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:01:09,749 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:01:09,749 ResolverFragment - State I can resolve reference: ""
+DEBUG main 2012-04-30 11:01:09,750 ResolverFragment - ResolverFragment with empty URI (means complete document)
+DEBUG main 2012-04-30 11:01:09,751 ElementProxy - setElement("Transforms", "")
+DEBUG main 2012-04-30 11:01:09,752 ElementProxy - setElement("Transform", "")
+DEBUG main 2012-04-30 11:01:09,766 ElementProxy - setElement("Signature", "")
+DEBUG main 2012-04-30 11:01:09,767 ElementProxy - setElement("SignedInfo", "")
+DEBUG main 2012-04-30 11:01:09,767 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:01:09,767 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:01:09,767 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:01:09,767 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:01:09,768 ElementProxy - setElement("KeyInfo", "")
+DEBUG main 2012-04-30 11:01:09,768 KeyInfo - Start getX509CertificateFromInternalResolvers() with 0 resolvers
+DEBUG main 2012-04-30 11:01:09,768 KeyInfo - I couldn't find a X509Certificate using the per-KeyInfo key resolvers
+DEBUG main 2012-04-30 11:01:09,768 KeyInfo - Start getX509CertificateFromStaticResolvers() with 7 resolvers
+DEBUG main 2012-04-30 11:01:09,768 RSAKeyValueResolver - Can I resolve X509Data
+DEBUG main 2012-04-30 11:01:09,768 RSAKeyValueResolver - Can I resolve KeyValue
+DEBUG main 2012-04-30 11:01:09,768 X509CertificateResolver - Can I resolve X509Data?
+DEBUG main 2012-04-30 11:01:09,769 X509CertificateResolver - Yes Sir, I can
+DEBUG main 2012-04-30 11:01:09,769 ElementProxy - setElement("X509Certificate", "")
+DEBUG main 2012-04-30 11:01:09,770 KeyInfo - I could find a X509Certificate using the system-wide key resolvers
+DEBUG main 2012-04-30 11:01:09,770 Manifest - verify 1 References
+DEBUG main 2012-04-30 11:01:09,770 Manifest - I am not requested to follow nested Manifests
+DEBUG main 2012-04-30 11:01:09,770 ElementProxy - setElement("Reference", "")
+DEBUG main 2012-04-30 11:01:09,771 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:01:09,771 ResourceResolver - I was asked to create a ResourceResolver and got 0
+DEBUG main 2012-04-30 11:01:09,771 ResourceResolver -  extra resolvers to my existing 4 system-wide resolvers
+DEBUG main 2012-04-30 11:01:09,771 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:01:09,771 ResolverDirectHTTP - quick fail for empty URIs and local ones
+DEBUG main 2012-04-30 11:01:09,771 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:01:09,772 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:01:09,772 ResolverFragment - State I can resolve reference: ""
+DEBUG main 2012-04-30 11:01:09,772 ResolverFragment - ResolverFragment with empty URI (means complete document)
+DEBUG main 2012-04-30 11:01:09,772 ElementProxy - setElement("Transforms", "")
+DEBUG main 2012-04-30 11:01:09,772 ElementProxy - setElement("Transform", "")
+INFO main 2012-04-30 11:01:09,773 Reference - Verification successful for URI ""
+DEBUG main 2012-04-30 11:01:09,773 Manifest - The Reference has Type 
+DEBUG main 2012-04-30 11:01:09,773 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:01:09,773 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:01:09,773 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:01:09,773 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:01:09,774 XMLSignature - SignatureMethodURI = http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:01:09,774 XMLSignature - jceSigAlgorithm    = SHA1withRSA
+DEBUG main 2012-04-30 11:01:09,774 XMLSignature - jceSigProvider     = SunRsaSign
+DEBUG main 2012-04-30 11:01:09,775 XMLSignature - PublicKey = Sun RSA public key, 1024 bits
+  modulus: 108967818427834787280858123127275108291807413798635639789560100094876581493192075929322383809567757643572326355829808355955819631095778571177502898947073834813011127179549715515978877219429043747463409878018639538660948543346340430287862985485146129677420862768770517059095074009293381420357044575788883639519
+  public exponent: 65537
+DEBUG main 2012-04-30 11:03:51,175 Init - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.c14n.implementations.Canonicalizer20010315OmitComments)
+DEBUG main 2012-04-30 11:03:51,178 Init - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315WithComments)
+DEBUG main 2012-04-30 11:03:51,179 Init - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments)
+DEBUG main 2012-04-30 11:03:51,180 Init - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments)
+DEBUG main 2012-04-30 11:03:51,187 Init - Transform.register(http://www.w3.org/2000/09/xmldsig#base64, org.apache.xml.security.transforms.implementations.TransformBase64Decode)
+DEBUG main 2012-04-30 11:03:51,188 Init - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.transforms.implementations.TransformC14N)
+DEBUG main 2012-04-30 11:03:51,189 Init - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NWithComments)
+DEBUG main 2012-04-30 11:03:51,189 Init - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.transforms.implementations.TransformC14NExclusive)
+DEBUG main 2012-04-30 11:03:51,190 Init - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NExclusiveWithComments)
+DEBUG main 2012-04-30 11:03:51,191 Init - Transform.register(http://www.w3.org/TR/1999/REC-xpath-19991116, org.apache.xml.security.transforms.implementations.TransformXPath)
+DEBUG main 2012-04-30 11:03:51,192 Init - Transform.register(http://www.w3.org/2000/09/xmldsig#enveloped-signature, org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature)
+DEBUG main 2012-04-30 11:03:51,193 Init - Transform.register(http://www.w3.org/TR/1999/REC-xslt-19991116, org.apache.xml.security.transforms.implementations.TransformXSLT)
+DEBUG main 2012-04-30 11:03:51,202 Init - Transform.register(http://www.w3.org/2002/04/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+DEBUG main 2012-04-30 11:03:51,202 Init - Transform.register(http://www.w3.org/2002/06/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+DEBUG main 2012-04-30 11:03:51,204 SignatureAlgorithm - Init() called
+DEBUG main 2012-04-30 11:03:51,211 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#dsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureDSA)
+DEBUG main 2012-04-30 11:03:51,213 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#dsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureDSA
+DEBUG main 2012-04-30 11:03:51,218 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#rsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1)
+DEBUG main 2012-04-30 11:03:51,218 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#rsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1
+DEBUG main 2012-04-30 11:03:51,220 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#hmac-sha1, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1)
+DEBUG main 2012-04-30 11:03:51,220 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#hmac-sha1 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1
+DEBUG main 2012-04-30 11:03:51,220 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-md5, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5)
+DEBUG main 2012-04-30 11:03:51,220 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-md5 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5
+DEBUG main 2012-04-30 11:03:51,221 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160)
+DEBUG main 2012-04-30 11:03:51,221 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160
+DEBUG main 2012-04-30 11:03:51,221 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256)
+DEBUG main 2012-04-30 11:03:51,222 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256
+DEBUG main 2012-04-30 11:03:51,223 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384)
+DEBUG main 2012-04-30 11:03:51,223 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha384 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384
+DEBUG main 2012-04-30 11:03:51,223 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512)
+DEBUG main 2012-04-30 11:03:51,223 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha512 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512
+DEBUG main 2012-04-30 11:03:51,224 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-md5, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5)
+DEBUG main 2012-04-30 11:03:51,224 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-md5 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5
+DEBUG main 2012-04-30 11:03:51,225 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160)
+DEBUG main 2012-04-30 11:03:51,225 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160
+DEBUG main 2012-04-30 11:03:51,225 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha256, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256)
+DEBUG main 2012-04-30 11:03:51,225 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha256 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256
+DEBUG main 2012-04-30 11:03:51,226 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha384, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384)
+DEBUG main 2012-04-30 11:03:51,226 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha384 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384
+DEBUG main 2012-04-30 11:03:51,226 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha512, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512)
+DEBUG main 2012-04-30 11:03:51,227 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha512 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512
+DEBUG main 2012-04-30 11:03:51,236 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP: A simple resolver for requests to HTTP space
+DEBUG main 2012-04-30 11:03:51,238 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverLocalFilesystem: A simple resolver for requests to the local file system
+DEBUG main 2012-04-30 11:03:51,239 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverFragment: A simple resolver for requests of same-document URIs
+DEBUG main 2012-04-30 11:03:51,240 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverXPointer: A simple resolver for requests of XPointer fragents
+DEBUG main 2012-04-30 11:03:51,242 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver: Can extract RSA public keys
+DEBUG main 2012-04-30 11:03:51,243 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver: Can extract DSA public keys
+DEBUG main 2012-04-30 11:03:51,244 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509CertificateResolver: Can extract public keys from X509 certificates
+DEBUG main 2012-04-30 11:03:51,245 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver: Uses an X509v3 SubjectKeyIdentifier extension to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:03:51,246 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver: Resolves keys and certificates using ResourceResolvers
+DEBUG main 2012-04-30 11:03:51,247 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver: Uses an X509 SubjectName to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:03:51,248 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver: Uses an X509 IssuerName and IssuerSerial to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:03:51,249 Init - Now I try to bind prefixes:
+DEBUG main 2012-04-30 11:03:51,249 Init - Now I try to bind ds to http://www.w3.org/2000/09/xmldsig#
+DEBUG main 2012-04-30 11:03:51,249 Init - Now I try to bind xenc to http://www.w3.org/2001/04/xmlenc#
+DEBUG main 2012-04-30 11:03:51,249 Init - Now I try to bind experimental to http://www.xmlsecurity.org/experimental#
+DEBUG main 2012-04-30 11:03:51,249 Init - Now I try to bind dsig-xpath-old to http://www.w3.org/2002/04/xmldsig-filter2
+DEBUG main 2012-04-30 11:03:51,249 Init - Now I try to bind dsig-xpath to http://www.w3.org/2002/06/xmldsig-filter2
+DEBUG main 2012-04-30 11:03:51,250 Init - Now I try to bind ec to http://www.w3.org/2001/10/xml-exc-c14n#
+DEBUG main 2012-04-30 11:03:51,250 Init - Now I try to bind xx to http://www.nue.et-inf.uni-siegen.de/~geuer-pollmann/#xpathFilter
+DEBUG main 2012-04-30 11:03:51,253 Init - XX_init                             112 ms
+DEBUG main 2012-04-30 11:03:51,253 Init -   XX_prng                           0 ms
+DEBUG main 2012-04-30 11:03:51,253 Init -   XX_parsing                        13 ms
+DEBUG main 2012-04-30 11:03:51,253 Init -   XX_configure_i18n                 4 ms
+DEBUG main 2012-04-30 11:03:51,253 Init -   XX_configure_reg_c14n             19 ms
+DEBUG main 2012-04-30 11:03:51,253 Init -   XX_configure_reg_jcemapper        4 ms
+DEBUG main 2012-04-30 11:03:51,254 Init -   XX_configure_reg_keyInfo          6 ms
+DEBUG main 2012-04-30 11:03:51,254 Init -   XX_configure_reg_keyResolver      8 ms
+DEBUG main 2012-04-30 11:03:51,254 Init -   XX_configure_reg_prefixes         4 ms
+DEBUG main 2012-04-30 11:03:51,254 Init -   XX_configure_reg_resourceresolver 6 ms
+DEBUG main 2012-04-30 11:03:51,254 Init -   XX_configure_reg_sigalgos         25 ms
+DEBUG main 2012-04-30 11:03:51,254 Init -   XX_configure_reg_transforms       22 ms
+DEBUG main 2012-04-30 11:03:52,700 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:03:52,700 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:03:52,701 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:03:52,702 Transforms - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+DEBUG main 2012-04-30 11:03:52,702 Transform - Create URI "http://www.w3.org/2000/09/xmldsig#enveloped-signature" class "class org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature"
+DEBUG main 2012-04-30 11:03:52,702 Transform - The NodeList is null
+DEBUG main 2012-04-30 11:03:52,702 Transforms - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+DEBUG main 2012-04-30 11:03:52,704 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:03:52,714 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:03:52,714 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:03:52,714 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:03:52,714 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:03:52,715 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:03:52,715 ResourceResolver - I was asked to create a ResourceResolver and got 0
+DEBUG main 2012-04-30 11:03:52,715 ResourceResolver -  extra resolvers to my existing 4 system-wide resolvers
+DEBUG main 2012-04-30 11:03:52,715 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:03:52,716 ResolverDirectHTTP - quick fail for empty URIs and local ones
+DEBUG main 2012-04-30 11:03:52,716 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:03:52,716 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:03:52,716 ResolverFragment - State I can resolve reference: ""
+DEBUG main 2012-04-30 11:03:52,716 ResolverFragment - ResolverFragment with empty URI (means complete document)
+DEBUG main 2012-04-30 11:03:52,718 ElementProxy - setElement("Transforms", "")
+DEBUG main 2012-04-30 11:03:52,718 ElementProxy - setElement("Transform", "")
+DEBUG main 2012-04-30 11:03:52,733 ElementProxy - setElement("Signature", "")
+DEBUG main 2012-04-30 11:03:52,733 ElementProxy - setElement("SignedInfo", "")
+DEBUG main 2012-04-30 11:03:52,733 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:03:52,734 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:03:52,734 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:03:52,734 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:03:52,734 ElementProxy - setElement("KeyInfo", "")
+DEBUG main 2012-04-30 11:03:52,734 KeyInfo - Start getX509CertificateFromInternalResolvers() with 0 resolvers
+DEBUG main 2012-04-30 11:03:52,734 KeyInfo - I couldn't find a X509Certificate using the per-KeyInfo key resolvers
+DEBUG main 2012-04-30 11:03:52,735 KeyInfo - Start getX509CertificateFromStaticResolvers() with 7 resolvers
+DEBUG main 2012-04-30 11:03:52,735 RSAKeyValueResolver - Can I resolve X509Data
+DEBUG main 2012-04-30 11:03:52,735 RSAKeyValueResolver - Can I resolve KeyValue
+DEBUG main 2012-04-30 11:03:52,735 X509CertificateResolver - Can I resolve X509Data?
+DEBUG main 2012-04-30 11:03:52,735 X509CertificateResolver - Yes Sir, I can
+DEBUG main 2012-04-30 11:03:52,735 ElementProxy - setElement("X509Certificate", "")
+DEBUG main 2012-04-30 11:03:52,737 KeyInfo - I could find a X509Certificate using the system-wide key resolvers
+DEBUG main 2012-04-30 11:03:52,737 Manifest - verify 1 References
+DEBUG main 2012-04-30 11:03:52,737 Manifest - I am not requested to follow nested Manifests
+DEBUG main 2012-04-30 11:03:52,737 ElementProxy - setElement("Reference", "")
+DEBUG main 2012-04-30 11:03:52,737 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:03:52,737 ResourceResolver - I was asked to create a ResourceResolver and got 0
+DEBUG main 2012-04-30 11:03:52,738 ResourceResolver -  extra resolvers to my existing 4 system-wide resolvers
+DEBUG main 2012-04-30 11:03:52,738 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:03:52,738 ResolverDirectHTTP - quick fail for empty URIs and local ones
+DEBUG main 2012-04-30 11:03:52,738 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:03:52,738 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:03:52,738 ResolverFragment - State I can resolve reference: ""
+DEBUG main 2012-04-30 11:03:52,738 ResolverFragment - ResolverFragment with empty URI (means complete document)
+DEBUG main 2012-04-30 11:03:52,739 ElementProxy - setElement("Transforms", "")
+DEBUG main 2012-04-30 11:03:52,739 ElementProxy - setElement("Transform", "")
+INFO main 2012-04-30 11:03:52,739 Reference - Verification successful for URI ""
+DEBUG main 2012-04-30 11:03:52,739 Manifest - The Reference has Type 
+DEBUG main 2012-04-30 11:03:52,740 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:03:52,740 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:03:52,740 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:03:52,740 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:03:52,740 XMLSignature - SignatureMethodURI = http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:03:52,740 XMLSignature - jceSigAlgorithm    = SHA1withRSA
+DEBUG main 2012-04-30 11:03:52,741 XMLSignature - jceSigProvider     = SunRsaSign
+DEBUG main 2012-04-30 11:03:52,741 XMLSignature - PublicKey = Sun RSA public key, 1024 bits
+  modulus: 108967818427834787280858123127275108291807413798635639789560100094876581493192075929322383809567757643572326355829808355955819631095778571177502898947073834813011127179549715515978877219429043747463409878018639538660948543346340430287862985485146129677420862768770517059095074009293381420357044575788883639519
+  public exponent: 65537
+DEBUG main 2012-04-30 11:04:45,988 Init - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.c14n.implementations.Canonicalizer20010315OmitComments)
+DEBUG main 2012-04-30 11:04:45,991 Init - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315WithComments)
+DEBUG main 2012-04-30 11:04:45,994 Init - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments)
+DEBUG main 2012-04-30 11:04:45,994 Init - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments)
+DEBUG main 2012-04-30 11:04:45,998 Init - Transform.register(http://www.w3.org/2000/09/xmldsig#base64, org.apache.xml.security.transforms.implementations.TransformBase64Decode)
+DEBUG main 2012-04-30 11:04:45,999 Init - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.transforms.implementations.TransformC14N)
+DEBUG main 2012-04-30 11:04:45,999 Init - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NWithComments)
+DEBUG main 2012-04-30 11:04:46,000 Init - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.transforms.implementations.TransformC14NExclusive)
+DEBUG main 2012-04-30 11:04:46,001 Init - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NExclusiveWithComments)
+DEBUG main 2012-04-30 11:04:46,002 Init - Transform.register(http://www.w3.org/TR/1999/REC-xpath-19991116, org.apache.xml.security.transforms.implementations.TransformXPath)
+DEBUG main 2012-04-30 11:04:46,003 Init - Transform.register(http://www.w3.org/2000/09/xmldsig#enveloped-signature, org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature)
+DEBUG main 2012-04-30 11:04:46,003 Init - Transform.register(http://www.w3.org/TR/1999/REC-xslt-19991116, org.apache.xml.security.transforms.implementations.TransformXSLT)
+DEBUG main 2012-04-30 11:04:46,005 Init - Transform.register(http://www.w3.org/2002/04/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+DEBUG main 2012-04-30 11:04:46,005 Init - Transform.register(http://www.w3.org/2002/06/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+DEBUG main 2012-04-30 11:04:46,008 SignatureAlgorithm - Init() called
+DEBUG main 2012-04-30 11:04:46,010 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#dsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureDSA)
+DEBUG main 2012-04-30 11:04:46,012 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#dsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureDSA
+DEBUG main 2012-04-30 11:04:46,013 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#rsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1)
+DEBUG main 2012-04-30 11:04:46,013 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#rsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1
+DEBUG main 2012-04-30 11:04:46,015 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#hmac-sha1, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1)
+DEBUG main 2012-04-30 11:04:46,015 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#hmac-sha1 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1
+DEBUG main 2012-04-30 11:04:46,015 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-md5, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5)
+DEBUG main 2012-04-30 11:04:46,016 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-md5 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5
+DEBUG main 2012-04-30 11:04:46,017 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160)
+DEBUG main 2012-04-30 11:04:46,017 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160
+DEBUG main 2012-04-30 11:04:46,017 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256)
+DEBUG main 2012-04-30 11:04:46,017 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256
+DEBUG main 2012-04-30 11:04:46,018 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384)
+DEBUG main 2012-04-30 11:04:46,018 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha384 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384
+DEBUG main 2012-04-30 11:04:46,019 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512)
+DEBUG main 2012-04-30 11:04:46,019 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha512 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512
+DEBUG main 2012-04-30 11:04:46,019 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-md5, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5)
+DEBUG main 2012-04-30 11:04:46,019 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-md5 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5
+DEBUG main 2012-04-30 11:04:46,020 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160)
+DEBUG main 2012-04-30 11:04:46,020 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160
+DEBUG main 2012-04-30 11:04:46,020 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha256, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256)
+DEBUG main 2012-04-30 11:04:46,021 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha256 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256
+DEBUG main 2012-04-30 11:04:46,021 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha384, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384)
+DEBUG main 2012-04-30 11:04:46,021 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha384 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384
+DEBUG main 2012-04-30 11:04:46,022 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha512, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512)
+DEBUG main 2012-04-30 11:04:46,022 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha512 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512
+DEBUG main 2012-04-30 11:04:46,031 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP: A simple resolver for requests to HTTP space
+DEBUG main 2012-04-30 11:04:46,034 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverLocalFilesystem: A simple resolver for requests to the local file system
+DEBUG main 2012-04-30 11:04:46,034 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverFragment: A simple resolver for requests of same-document URIs
+DEBUG main 2012-04-30 11:04:46,035 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverXPointer: A simple resolver for requests of XPointer fragents
+DEBUG main 2012-04-30 11:04:46,038 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver: Can extract RSA public keys
+DEBUG main 2012-04-30 11:04:46,039 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver: Can extract DSA public keys
+DEBUG main 2012-04-30 11:04:46,040 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509CertificateResolver: Can extract public keys from X509 certificates
+DEBUG main 2012-04-30 11:04:46,040 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver: Uses an X509v3 SubjectKeyIdentifier extension to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:04:46,041 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver: Resolves keys and certificates using ResourceResolvers
+DEBUG main 2012-04-30 11:04:46,043 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver: Uses an X509 SubjectName to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:04:46,044 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver: Uses an X509 IssuerName and IssuerSerial to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:04:46,044 Init - Now I try to bind prefixes:
+DEBUG main 2012-04-30 11:04:46,045 Init - Now I try to bind ds to http://www.w3.org/2000/09/xmldsig#
+DEBUG main 2012-04-30 11:04:46,045 Init - Now I try to bind xenc to http://www.w3.org/2001/04/xmlenc#
+DEBUG main 2012-04-30 11:04:46,045 Init - Now I try to bind experimental to http://www.xmlsecurity.org/experimental#
+DEBUG main 2012-04-30 11:04:46,045 Init - Now I try to bind dsig-xpath-old to http://www.w3.org/2002/04/xmldsig-filter2
+DEBUG main 2012-04-30 11:04:46,045 Init - Now I try to bind dsig-xpath to http://www.w3.org/2002/06/xmldsig-filter2
+DEBUG main 2012-04-30 11:04:46,045 Init - Now I try to bind ec to http://www.w3.org/2001/10/xml-exc-c14n#
+DEBUG main 2012-04-30 11:04:46,046 Init - Now I try to bind xx to http://www.nue.et-inf.uni-siegen.de/~geuer-pollmann/#xpathFilter
+DEBUG main 2012-04-30 11:04:46,046 Init - XX_init                             87 ms
+DEBUG main 2012-04-30 11:04:46,046 Init -   XX_prng                           0 ms
+DEBUG main 2012-04-30 11:04:46,046 Init -   XX_parsing                        13 ms
+DEBUG main 2012-04-30 11:04:46,046 Init -   XX_configure_i18n                 4 ms
+DEBUG main 2012-04-30 11:04:46,046 Init -   XX_configure_reg_c14n             15 ms
+DEBUG main 2012-04-30 11:04:46,046 Init -   XX_configure_reg_jcemapper        4 ms
+DEBUG main 2012-04-30 11:04:46,047 Init -   XX_configure_reg_keyInfo          6 ms
+DEBUG main 2012-04-30 11:04:46,047 Init -   XX_configure_reg_keyResolver      8 ms
+DEBUG main 2012-04-30 11:04:46,047 Init -   XX_configure_reg_prefixes         2 ms
+DEBUG main 2012-04-30 11:04:46,047 Init -   XX_configure_reg_resourceresolver 6 ms
+DEBUG main 2012-04-30 11:04:46,047 Init -   XX_configure_reg_sigalgos         17 ms
+DEBUG main 2012-04-30 11:04:46,047 Init -   XX_configure_reg_transforms       11 ms
+DEBUG main 2012-04-30 11:04:47,458 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:04:47,459 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:04:47,459 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:04:47,460 Transforms - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+DEBUG main 2012-04-30 11:04:47,460 Transform - Create URI "http://www.w3.org/2000/09/xmldsig#enveloped-signature" class "class org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature"
+DEBUG main 2012-04-30 11:04:47,460 Transform - The NodeList is null
+DEBUG main 2012-04-30 11:04:47,460 Transforms - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+DEBUG main 2012-04-30 11:04:47,462 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:04:47,471 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:04:47,472 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:04:47,472 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:04:47,472 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:04:47,472 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:04:47,473 ResourceResolver - I was asked to create a ResourceResolver and got 0
+DEBUG main 2012-04-30 11:04:47,473 ResourceResolver -  extra resolvers to my existing 4 system-wide resolvers
+DEBUG main 2012-04-30 11:04:47,473 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:04:47,473 ResolverDirectHTTP - quick fail for empty URIs and local ones
+DEBUG main 2012-04-30 11:04:47,473 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:04:47,474 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:04:47,474 ResolverFragment - State I can resolve reference: ""
+DEBUG main 2012-04-30 11:04:47,474 ResolverFragment - ResolverFragment with empty URI (means complete document)
+DEBUG main 2012-04-30 11:04:47,476 ElementProxy - setElement("Transforms", "")
+DEBUG main 2012-04-30 11:04:47,476 ElementProxy - setElement("Transform", "")
+DEBUG main 2012-04-30 11:04:47,491 ElementProxy - setElement("Signature", "")
+DEBUG main 2012-04-30 11:04:47,491 ElementProxy - setElement("SignedInfo", "")
+DEBUG main 2012-04-30 11:04:47,491 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:04:47,492 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:04:47,492 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:04:47,492 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:04:47,492 ElementProxy - setElement("KeyInfo", "")
+DEBUG main 2012-04-30 11:04:47,492 KeyInfo - Start getX509CertificateFromInternalResolvers() with 0 resolvers
+DEBUG main 2012-04-30 11:04:47,492 KeyInfo - I couldn't find a X509Certificate using the per-KeyInfo key resolvers
+DEBUG main 2012-04-30 11:04:47,493 KeyInfo - Start getX509CertificateFromStaticResolvers() with 7 resolvers
+DEBUG main 2012-04-30 11:04:47,493 RSAKeyValueResolver - Can I resolve X509Data
+DEBUG main 2012-04-30 11:04:47,493 RSAKeyValueResolver - Can I resolve KeyValue
+DEBUG main 2012-04-30 11:04:47,493 X509CertificateResolver - Can I resolve X509Data?
+DEBUG main 2012-04-30 11:04:47,493 X509CertificateResolver - Yes Sir, I can
+DEBUG main 2012-04-30 11:04:47,493 ElementProxy - setElement("X509Certificate", "")
+DEBUG main 2012-04-30 11:04:47,495 KeyInfo - I could find a X509Certificate using the system-wide key resolvers
+DEBUG main 2012-04-30 11:04:47,495 Manifest - verify 1 References
+DEBUG main 2012-04-30 11:04:47,495 Manifest - I am not requested to follow nested Manifests
+DEBUG main 2012-04-30 11:04:47,495 ElementProxy - setElement("Reference", "")
+DEBUG main 2012-04-30 11:04:47,495 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:04:47,495 ResourceResolver - I was asked to create a ResourceResolver and got 0
+DEBUG main 2012-04-30 11:04:47,496 ResourceResolver -  extra resolvers to my existing 4 system-wide resolvers
+DEBUG main 2012-04-30 11:04:47,496 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:04:47,496 ResolverDirectHTTP - quick fail for empty URIs and local ones
+DEBUG main 2012-04-30 11:04:47,496 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:04:47,496 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:04:47,496 ResolverFragment - State I can resolve reference: ""
+DEBUG main 2012-04-30 11:04:47,496 ResolverFragment - ResolverFragment with empty URI (means complete document)
+DEBUG main 2012-04-30 11:04:47,497 ElementProxy - setElement("Transforms", "")
+DEBUG main 2012-04-30 11:04:47,497 ElementProxy - setElement("Transform", "")
+INFO main 2012-04-30 11:04:47,497 Reference - Verification successful for URI ""
+DEBUG main 2012-04-30 11:04:47,497 Manifest - The Reference has Type 
+DEBUG main 2012-04-30 11:04:47,498 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:04:47,498 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:04:47,498 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:04:47,498 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:04:47,498 XMLSignature - SignatureMethodURI = http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:04:47,498 XMLSignature - jceSigAlgorithm    = SHA1withRSA
+DEBUG main 2012-04-30 11:04:47,499 XMLSignature - jceSigProvider     = SunRsaSign
+DEBUG main 2012-04-30 11:04:47,499 XMLSignature - PublicKey = Sun RSA public key, 1024 bits
+  modulus: 108967818427834787280858123127275108291807413798635639789560100094876581493192075929322383809567757643572326355829808355955819631095778571177502898947073834813011127179549715515978877219429043747463409878018639538660948543346340430287862985485146129677420862768770517059095074009293381420357044575788883639519
+  public exponent: 65537
+DEBUG main 2012-04-30 11:12:14,110 Init - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.c14n.implementations.Canonicalizer20010315OmitComments)
+DEBUG main 2012-04-30 11:12:14,113 Init - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315WithComments)
+DEBUG main 2012-04-30 11:12:14,115 Init - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments)
+DEBUG main 2012-04-30 11:12:14,116 Init - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments)
+DEBUG main 2012-04-30 11:12:14,119 Init - Transform.register(http://www.w3.org/2000/09/xmldsig#base64, org.apache.xml.security.transforms.implementations.TransformBase64Decode)
+DEBUG main 2012-04-30 11:12:14,120 Init - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.transforms.implementations.TransformC14N)
+DEBUG main 2012-04-30 11:12:14,120 Init - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NWithComments)
+DEBUG main 2012-04-30 11:12:14,121 Init - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.transforms.implementations.TransformC14NExclusive)
+DEBUG main 2012-04-30 11:12:14,122 Init - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NExclusiveWithComments)
+DEBUG main 2012-04-30 11:12:14,123 Init - Transform.register(http://www.w3.org/TR/1999/REC-xpath-19991116, org.apache.xml.security.transforms.implementations.TransformXPath)
+DEBUG main 2012-04-30 11:12:14,123 Init - Transform.register(http://www.w3.org/2000/09/xmldsig#enveloped-signature, org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature)
+DEBUG main 2012-04-30 11:12:14,124 Init - Transform.register(http://www.w3.org/TR/1999/REC-xslt-19991116, org.apache.xml.security.transforms.implementations.TransformXSLT)
+DEBUG main 2012-04-30 11:12:14,126 Init - Transform.register(http://www.w3.org/2002/04/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+DEBUG main 2012-04-30 11:12:14,126 Init - Transform.register(http://www.w3.org/2002/06/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+DEBUG main 2012-04-30 11:12:14,128 SignatureAlgorithm - Init() called
+DEBUG main 2012-04-30 11:12:14,131 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#dsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureDSA)
+DEBUG main 2012-04-30 11:12:14,134 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#dsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureDSA
+DEBUG main 2012-04-30 11:12:14,135 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#rsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1)
+DEBUG main 2012-04-30 11:12:14,136 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#rsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1
+DEBUG main 2012-04-30 11:12:14,137 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#hmac-sha1, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1)
+DEBUG main 2012-04-30 11:12:14,137 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#hmac-sha1 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1
+DEBUG main 2012-04-30 11:12:14,138 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-md5, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5)
+DEBUG main 2012-04-30 11:12:14,138 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-md5 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5
+DEBUG main 2012-04-30 11:12:14,138 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160)
+DEBUG main 2012-04-30 11:12:14,138 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160
+DEBUG main 2012-04-30 11:12:14,139 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256)
+DEBUG main 2012-04-30 11:12:14,139 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256
+DEBUG main 2012-04-30 11:12:14,139 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384)
+DEBUG main 2012-04-30 11:12:14,140 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha384 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384
+DEBUG main 2012-04-30 11:12:14,140 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512)
+DEBUG main 2012-04-30 11:12:14,140 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha512 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512
+DEBUG main 2012-04-30 11:12:14,141 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-md5, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5)
+DEBUG main 2012-04-30 11:12:14,141 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-md5 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5
+DEBUG main 2012-04-30 11:12:14,141 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160)
+DEBUG main 2012-04-30 11:12:14,141 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160
+DEBUG main 2012-04-30 11:12:14,142 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha256, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256)
+DEBUG main 2012-04-30 11:12:14,142 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha256 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256
+DEBUG main 2012-04-30 11:12:14,143 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha384, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384)
+DEBUG main 2012-04-30 11:12:14,143 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha384 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384
+DEBUG main 2012-04-30 11:12:14,143 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha512, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512)
+DEBUG main 2012-04-30 11:12:14,143 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha512 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512
+DEBUG main 2012-04-30 11:12:14,152 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP: A simple resolver for requests to HTTP space
+DEBUG main 2012-04-30 11:12:14,154 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverLocalFilesystem: A simple resolver for requests to the local file system
+DEBUG main 2012-04-30 11:12:14,155 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverFragment: A simple resolver for requests of same-document URIs
+DEBUG main 2012-04-30 11:12:14,156 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverXPointer: A simple resolver for requests of XPointer fragents
+DEBUG main 2012-04-30 11:12:14,158 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver: Can extract RSA public keys
+DEBUG main 2012-04-30 11:12:14,160 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver: Can extract DSA public keys
+DEBUG main 2012-04-30 11:12:14,160 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509CertificateResolver: Can extract public keys from X509 certificates
+DEBUG main 2012-04-30 11:12:14,161 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver: Uses an X509v3 SubjectKeyIdentifier extension to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:12:14,162 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver: Resolves keys and certificates using ResourceResolvers
+DEBUG main 2012-04-30 11:12:14,163 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver: Uses an X509 SubjectName to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:12:14,164 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver: Uses an X509 IssuerName and IssuerSerial to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:12:14,165 Init - Now I try to bind prefixes:
+DEBUG main 2012-04-30 11:12:14,165 Init - Now I try to bind ds to http://www.w3.org/2000/09/xmldsig#
+DEBUG main 2012-04-30 11:12:14,166 Init - Now I try to bind xenc to http://www.w3.org/2001/04/xmlenc#
+DEBUG main 2012-04-30 11:12:14,166 Init - Now I try to bind experimental to http://www.xmlsecurity.org/experimental#
+DEBUG main 2012-04-30 11:12:14,166 Init - Now I try to bind dsig-xpath-old to http://www.w3.org/2002/04/xmldsig-filter2
+DEBUG main 2012-04-30 11:12:14,166 Init - Now I try to bind dsig-xpath to http://www.w3.org/2002/06/xmldsig-filter2
+DEBUG main 2012-04-30 11:12:14,166 Init - Now I try to bind ec to http://www.w3.org/2001/10/xml-exc-c14n#
+DEBUG main 2012-04-30 11:12:14,166 Init - Now I try to bind xx to http://www.nue.et-inf.uni-siegen.de/~geuer-pollmann/#xpathFilter
+DEBUG main 2012-04-30 11:12:14,166 Init - XX_init                             101 ms
+DEBUG main 2012-04-30 11:12:14,167 Init -   XX_prng                           0 ms
+DEBUG main 2012-04-30 11:12:14,167 Init -   XX_parsing                        20 ms
+DEBUG main 2012-04-30 11:12:14,167 Init -   XX_configure_i18n                 4 ms
+DEBUG main 2012-04-30 11:12:14,167 Init -   XX_configure_reg_c14n             19 ms
+DEBUG main 2012-04-30 11:12:14,167 Init -   XX_configure_reg_jcemapper        3 ms
+DEBUG main 2012-04-30 11:12:14,167 Init -   XX_configure_reg_keyInfo          12 ms
+DEBUG main 2012-04-30 11:12:14,167 Init -   XX_configure_reg_keyResolver      8 ms
+DEBUG main 2012-04-30 11:12:14,167 Init -   XX_configure_reg_prefixes         1 ms
+DEBUG main 2012-04-30 11:12:14,168 Init -   XX_configure_reg_resourceresolver 6 ms
+DEBUG main 2012-04-30 11:12:14,168 Init -   XX_configure_reg_sigalgos         17 ms
+DEBUG main 2012-04-30 11:12:14,168 Init -   XX_configure_reg_transforms       11 ms
+DEBUG main 2012-04-30 11:12:15,607 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:12:15,607 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:12:15,607 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:12:15,608 Transforms - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+DEBUG main 2012-04-30 11:12:15,608 Transform - Create URI "http://www.w3.org/2000/09/xmldsig#enveloped-signature" class "class org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature"
+DEBUG main 2012-04-30 11:12:15,608 Transform - The NodeList is null
+DEBUG main 2012-04-30 11:12:15,609 Transforms - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+DEBUG main 2012-04-30 11:12:15,610 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:12:15,620 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:12:15,620 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:12:15,620 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:12:15,620 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:12:15,621 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:12:15,621 ResourceResolver - I was asked to create a ResourceResolver and got 0
+DEBUG main 2012-04-30 11:12:15,621 ResourceResolver -  extra resolvers to my existing 4 system-wide resolvers
+DEBUG main 2012-04-30 11:12:15,622 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:12:15,622 ResolverDirectHTTP - quick fail for empty URIs and local ones
+DEBUG main 2012-04-30 11:12:15,622 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:12:15,622 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:12:15,622 ResolverFragment - State I can resolve reference: ""
+DEBUG main 2012-04-30 11:12:15,622 ResolverFragment - ResolverFragment with empty URI (means complete document)
+DEBUG main 2012-04-30 11:12:15,624 ElementProxy - setElement("Transforms", "")
+DEBUG main 2012-04-30 11:12:15,624 ElementProxy - setElement("Transform", "")
+DEBUG main 2012-04-30 11:12:15,639 ElementProxy - setElement("Signature", "")
+DEBUG main 2012-04-30 11:12:15,640 ElementProxy - setElement("SignedInfo", "")
+DEBUG main 2012-04-30 11:12:15,640 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:12:15,640 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:12:15,640 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:12:15,640 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:12:15,641 ElementProxy - setElement("KeyInfo", "")
+DEBUG main 2012-04-30 11:12:15,641 KeyInfo - Start getX509CertificateFromInternalResolvers() with 0 resolvers
+DEBUG main 2012-04-30 11:12:15,641 KeyInfo - I couldn't find a X509Certificate using the per-KeyInfo key resolvers
+DEBUG main 2012-04-30 11:12:15,641 KeyInfo - Start getX509CertificateFromStaticResolvers() with 7 resolvers
+DEBUG main 2012-04-30 11:12:15,641 RSAKeyValueResolver - Can I resolve X509Data
+DEBUG main 2012-04-30 11:12:15,641 RSAKeyValueResolver - Can I resolve KeyValue
+DEBUG main 2012-04-30 11:12:15,642 X509CertificateResolver - Can I resolve X509Data?
+DEBUG main 2012-04-30 11:12:15,642 X509CertificateResolver - Yes Sir, I can
+DEBUG main 2012-04-30 11:12:15,642 ElementProxy - setElement("X509Certificate", "")
+DEBUG main 2012-04-30 11:12:15,643 KeyInfo - I could find a X509Certificate using the system-wide key resolvers
+DEBUG main 2012-04-30 11:12:15,643 Manifest - verify 1 References
+DEBUG main 2012-04-30 11:12:15,643 Manifest - I am not requested to follow nested Manifests
+DEBUG main 2012-04-30 11:12:15,643 ElementProxy - setElement("Reference", "")
+DEBUG main 2012-04-30 11:12:15,644 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:12:15,644 ResourceResolver - I was asked to create a ResourceResolver and got 0
+DEBUG main 2012-04-30 11:12:15,644 ResourceResolver -  extra resolvers to my existing 4 system-wide resolvers
+DEBUG main 2012-04-30 11:12:15,644 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:12:15,644 ResolverDirectHTTP - quick fail for empty URIs and local ones
+DEBUG main 2012-04-30 11:12:15,644 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:12:15,645 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:12:15,645 ResolverFragment - State I can resolve reference: ""
+DEBUG main 2012-04-30 11:12:15,645 ResolverFragment - ResolverFragment with empty URI (means complete document)
+DEBUG main 2012-04-30 11:12:15,645 ElementProxy - setElement("Transforms", "")
+DEBUG main 2012-04-30 11:12:15,645 ElementProxy - setElement("Transform", "")
+INFO main 2012-04-30 11:12:15,646 Reference - Verification successful for URI ""
+DEBUG main 2012-04-30 11:12:15,646 Manifest - The Reference has Type 
+DEBUG main 2012-04-30 11:12:15,646 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:12:15,646 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:12:15,646 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:12:15,647 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:12:15,647 XMLSignature - SignatureMethodURI = http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:12:15,647 XMLSignature - jceSigAlgorithm    = SHA1withRSA
+DEBUG main 2012-04-30 11:12:15,647 XMLSignature - jceSigProvider     = SunRsaSign
+DEBUG main 2012-04-30 11:12:15,648 XMLSignature - PublicKey = Sun RSA public key, 1024 bits
+  modulus: 108967818427834787280858123127275108291807413798635639789560100094876581493192075929322383809567757643572326355829808355955819631095778571177502898947073834813011127179549715515978877219429043747463409878018639538660948543346340430287862985485146129677420862768770517059095074009293381420357044575788883639519
+  public exponent: 65537
+DEBUG main 2012-04-30 11:15:57,297 Init - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.c14n.implementations.Canonicalizer20010315OmitComments)
+DEBUG main 2012-04-30 11:15:57,300 Init - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315WithComments)
+DEBUG main 2012-04-30 11:15:57,301 Init - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments)
+DEBUG main 2012-04-30 11:15:57,302 Init - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments)
+DEBUG main 2012-04-30 11:15:57,305 Init - Transform.register(http://www.w3.org/2000/09/xmldsig#base64, org.apache.xml.security.transforms.implementations.TransformBase64Decode)
+DEBUG main 2012-04-30 11:15:57,306 Init - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.transforms.implementations.TransformC14N)
+DEBUG main 2012-04-30 11:15:57,306 Init - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NWithComments)
+DEBUG main 2012-04-30 11:15:57,307 Init - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.transforms.implementations.TransformC14NExclusive)
+DEBUG main 2012-04-30 11:15:57,308 Init - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NExclusiveWithComments)
+DEBUG main 2012-04-30 11:15:57,309 Init - Transform.register(http://www.w3.org/TR/1999/REC-xpath-19991116, org.apache.xml.security.transforms.implementations.TransformXPath)
+DEBUG main 2012-04-30 11:15:57,309 Init - Transform.register(http://www.w3.org/2000/09/xmldsig#enveloped-signature, org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature)
+DEBUG main 2012-04-30 11:15:57,310 Init - Transform.register(http://www.w3.org/TR/1999/REC-xslt-19991116, org.apache.xml.security.transforms.implementations.TransformXSLT)
+DEBUG main 2012-04-30 11:15:57,312 Init - Transform.register(http://www.w3.org/2002/04/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+DEBUG main 2012-04-30 11:15:57,312 Init - Transform.register(http://www.w3.org/2002/06/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+DEBUG main 2012-04-30 11:15:57,314 SignatureAlgorithm - Init() called
+DEBUG main 2012-04-30 11:15:57,316 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#dsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureDSA)
+DEBUG main 2012-04-30 11:15:57,318 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#dsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureDSA
+DEBUG main 2012-04-30 11:15:57,320 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#rsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1)
+DEBUG main 2012-04-30 11:15:57,320 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#rsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1
+DEBUG main 2012-04-30 11:15:57,321 Init - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#hmac-sha1, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1)
+DEBUG main 2012-04-30 11:15:57,321 SignatureAlgorithm - Try to register http://www.w3.org/2000/09/xmldsig#hmac-sha1 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1
+DEBUG main 2012-04-30 11:15:57,322 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-md5, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5)
+DEBUG main 2012-04-30 11:15:57,322 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-md5 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5
+DEBUG main 2012-04-30 11:15:57,323 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160)
+DEBUG main 2012-04-30 11:15:57,323 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160
+DEBUG main 2012-04-30 11:15:57,323 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256)
+DEBUG main 2012-04-30 11:15:57,323 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256
+DEBUG main 2012-04-30 11:15:57,324 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384)
+DEBUG main 2012-04-30 11:15:57,324 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha384 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384
+DEBUG main 2012-04-30 11:15:57,325 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512)
+DEBUG main 2012-04-30 11:15:57,325 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha512 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512
+DEBUG main 2012-04-30 11:15:57,325 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-md5, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5)
+DEBUG main 2012-04-30 11:15:57,325 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-md5 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5
+DEBUG main 2012-04-30 11:15:57,326 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160)
+DEBUG main 2012-04-30 11:15:57,326 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160
+DEBUG main 2012-04-30 11:15:57,326 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha256, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256)
+DEBUG main 2012-04-30 11:15:57,327 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha256 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256
+DEBUG main 2012-04-30 11:15:57,327 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha384, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384)
+DEBUG main 2012-04-30 11:15:57,327 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha384 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384
+DEBUG main 2012-04-30 11:15:57,328 Init - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha512, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512)
+DEBUG main 2012-04-30 11:15:57,328 SignatureAlgorithm - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha512 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512
+DEBUG main 2012-04-30 11:15:57,337 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP: A simple resolver for requests to HTTP space
+DEBUG main 2012-04-30 11:15:57,339 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverLocalFilesystem: A simple resolver for requests to the local file system
+DEBUG main 2012-04-30 11:15:57,340 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverFragment: A simple resolver for requests of same-document URIs
+DEBUG main 2012-04-30 11:15:57,341 Init - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverXPointer: A simple resolver for requests of XPointer fragents
+DEBUG main 2012-04-30 11:15:57,350 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver: Can extract RSA public keys
+DEBUG main 2012-04-30 11:15:57,351 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver: Can extract DSA public keys
+DEBUG main 2012-04-30 11:15:57,352 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509CertificateResolver: Can extract public keys from X509 certificates
+DEBUG main 2012-04-30 11:15:57,354 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver: Uses an X509v3 SubjectKeyIdentifier extension to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:15:57,355 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver: Resolves keys and certificates using ResourceResolvers
+DEBUG main 2012-04-30 11:15:57,357 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver: Uses an X509 SubjectName to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:15:57,357 Init - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver: Uses an X509 IssuerName and IssuerSerial to retrieve a certificate from the storages
+DEBUG main 2012-04-30 11:15:57,358 Init - Now I try to bind prefixes:
+DEBUG main 2012-04-30 11:15:57,359 Init - Now I try to bind ds to http://www.w3.org/2000/09/xmldsig#
+DEBUG main 2012-04-30 11:15:57,359 Init - Now I try to bind xenc to http://www.w3.org/2001/04/xmlenc#
+DEBUG main 2012-04-30 11:15:57,359 Init - Now I try to bind experimental to http://www.xmlsecurity.org/experimental#
+DEBUG main 2012-04-30 11:15:57,359 Init - Now I try to bind dsig-xpath-old to http://www.w3.org/2002/04/xmldsig-filter2
+DEBUG main 2012-04-30 11:15:57,359 Init - Now I try to bind dsig-xpath to http://www.w3.org/2002/06/xmldsig-filter2
+DEBUG main 2012-04-30 11:15:57,359 Init - Now I try to bind ec to http://www.w3.org/2001/10/xml-exc-c14n#
+DEBUG main 2012-04-30 11:15:57,360 Init - Now I try to bind xx to http://www.nue.et-inf.uni-siegen.de/~geuer-pollmann/#xpathFilter
+DEBUG main 2012-04-30 11:15:57,360 Init - XX_init                             92 ms
+DEBUG main 2012-04-30 11:15:57,360 Init -   XX_prng                           0 ms
+DEBUG main 2012-04-30 11:15:57,360 Init -   XX_parsing                        13 ms
+DEBUG main 2012-04-30 11:15:57,360 Init -   XX_configure_i18n                 4 ms
+DEBUG main 2012-04-30 11:15:57,360 Init -   XX_configure_reg_c14n             14 ms
+DEBUG main 2012-04-30 11:15:57,360 Init -   XX_configure_reg_jcemapper        4 ms
+DEBUG main 2012-04-30 11:15:57,360 Init -   XX_configure_reg_keyInfo          6 ms
+DEBUG main 2012-04-30 11:15:57,361 Init -   XX_configure_reg_keyResolver      10 ms
+DEBUG main 2012-04-30 11:15:57,361 Init -   XX_configure_reg_prefixes         2 ms
+DEBUG main 2012-04-30 11:15:57,361 Init -   XX_configure_reg_resourceresolver 12 ms
+DEBUG main 2012-04-30 11:15:57,361 Init -   XX_configure_reg_sigalgos         16 ms
+DEBUG main 2012-04-30 11:15:57,361 Init -   XX_configure_reg_transforms       10 ms
+DEBUG main 2012-04-30 11:15:58,786 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:15:58,786 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:15:58,787 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:15:58,788 Transforms - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+DEBUG main 2012-04-30 11:15:58,788 Transform - Create URI "http://www.w3.org/2000/09/xmldsig#enveloped-signature" class "class org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature"
+DEBUG main 2012-04-30 11:15:58,788 Transform - The NodeList is null
+DEBUG main 2012-04-30 11:15:58,788 Transforms - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+DEBUG main 2012-04-30 11:15:58,790 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:15:58,800 ElementProxy - setElement("SignatureMethod", "")
+DEBUG main 2012-04-30 11:15:58,801 SignatureAlgorithm - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+DEBUG main 2012-04-30 11:15:58,801 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+DEBUG main 2012-04-30 11:15:58,801 SignatureBaseRSA - Created SignatureDSA using SHA1withRSA
+DEBUG main 2012-04-30 11:15:58,801 JCEMapper - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+DEBUG main 2012-04-30 11:15:58,802 ResourceResolver - I was asked to create a ResourceResolver and got 0
+DEBUG main 2012-04-30 11:15:58,802 ResourceResolver -  extra resolvers to my existing 4 system-wide resolvers
+DEBUG main 2012-04-30 11:15:58,802 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:15:58,802 ResolverDirectHTTP - quick fail for empty URIs and local ones
+DEBUG main 2012-04-30 11:15:58,802 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:15:58,803 ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+DEBUG main 2012-04-30 11:15:58,803 ResolverFragment - State I can resolve reference: ""

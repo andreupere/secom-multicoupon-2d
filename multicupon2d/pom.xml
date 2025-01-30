@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>cat.uib.secom</groupId>
+  <artifactId>multicoupon2d</artifactId>
+  <version>0.0.3-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>multicoupon2d</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>org.simpleframework</groupId>
+    	<artifactId>simple-xml</artifactId>
+    	<version>2.4.1</version>
+    	<scope>provided</scope>
+    </dependency>
+    <dependency>
+    	<groupId>cat.uib.secom</groupId>
+    	<artifactId>bbs-core</artifactId>
+    	<version>0.0.10-SNAPSHOT</version>
+    	<scope>compile</scope>
+    </dependency>
+    <dependency>
+    	<groupId>cat.uib.secom</groupId>
+    	<artifactId>bbs-marshalling</artifactId>
+    	<version>0.0.10-SNAPSHOT</version>
+    	<scope>compile</scope>
+    </dependency>
+    <dependency>
+    	<groupId>cat.uib.secom</groupId>
+    	<artifactId>secom-utils-networking</artifactId>
+    	<version>0.0.7-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+  <modules>
+    <module>multicoupon2d-common</module>
+    <module>multicoupon2d-servers</module>
+    <module>multicoupon2d-client</module>
+    <module>multicoupon2d-integration-test</module>
+  </modules>
+  
+  <scm>  
+     <connection>  
+         scm:svn:http://dev.apaspai.es/svn/multicoupon2d/trunk  
+     </connection>  
+     <developerConnection>  
+         scm:svn:http://dev.apaspai.es/svn/multicoupon2d/trunk  
+     </developerConnection>  
+     <url>  
+         http://dev.apaspai.es/svn/multicoupon2d/trunk  
+     </url>  
+  </scm>
+  <build>
+  	<plugins>
+  	    <plugin>
+  	        <groupId>org.apache.maven.plugins</groupId>
+  	        <artifactId>maven-shade-plugin</artifactId>
+  	        <version>2.0</version>
+  	        <executions>
+  	            <execution>
+  	                <phase>package</phase>
+  	                <goals>
+  	                    <goal>shade</goal>
+  	                </goals>
+  	                <configuration>
+  	                	<artifactSet>
+  	                		<excludes>
+  	                			<exclude>xml-security:xmlsec</exclude>
+  	                		</excludes>
+  	                	</artifactSet>
+  	                </configuration>
+  	            </execution>
+  	        </executions>
+  	        <configuration>
+  	            	<finalName>uber-${artifactId}-${version}</finalName>
+  	            	<filters>
+			            <filter>
+			              <artifact>*:*</artifact>
+			              <excludes>
+			                <exclude>META-INF/*.SF</exclude>
+			                <exclude>META-INF/*.DSA</exclude>
+			                <exclude>META-INF/*.RSA</exclude>
+			              </excludes>
+			            </filter>
+			          </filters>
+  	        </configuration>
+  	    </plugin>
+	  	<plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-compiler-plugin</artifactId>
+	        <version>3.0</version>
+	        <configuration>
+	          <source>1.6</source>
+	          <target>1.6</target>
+	        </configuration>
+	      </plugin>
+	      <plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-surefire-plugin</artifactId>
+		    <version>2.12.4</version>
+		    <dependencies>
+		      <dependency>
+		        <groupId>org.apache.maven.surefire</groupId>
+		        <artifactId>surefire-junit47</artifactId>
+		        <version>2.13</version>
+		      </dependency>
+		    </dependencies>
+		  </plugin>
+  		<plugin>  
+    		<artifactId>maven-release-plugin</artifactId>  
+    		<configuration>  
+		        <!-- This is a 2.0 beta 6 bug. By default the goals are 'clean verify', so the modules  
+		        are not installed, so the dependencies between modules are not met. With this configuration   
+		        we force the module installation. -->  
+		        <preparationGoals>clean install</preparationGoals>  
+		        <username>${svn.username}</username>  
+		        <password>${svn.password}</password>  
+		        <tagBase>  
+		            http://dev.apaspai.es/svn/multicoupon2d/tags  
+		        </tagBase>  
+    		</configuration>  
+		</plugin>
+		<plugin>
+       		<groupId>org.apache.maven.plugins</groupId>
+       		<artifactId>maven-jar-plugin</artifactId>
+       		<version>2.2</version>
+		       <executions>
+		         <execution>
+		           <goals>
+		             <goal>test-jar</goal>
+		           </goals>
+		         </execution>
+		       </executions>
+     	</plugin>
+  		</plugins>
+  	</build>
+    <distributionManagement>
+  	<!-- <repository>
+  		<id>testingRepository</id>
+  		<name>Local repository</name>
+  		<url>scp://localhost/home/apaspai/.m2/repository</url>
+  	</repository>
+  	-->
+  	<snapshotRepository>
+    	<id>snapshots</id>
+    	<url>http://dev.apaspai.es:8081/nexus/content/repositories/snapshots</url>
+  	</snapshotRepository>
+  		<repository>
+    	<id>releases</id>
+    	<url>http://dev.apaspai.es:8081/nexus/content/repositories/releases</url>
+  </repository>
+  </distributionManagement>
+
+</project>

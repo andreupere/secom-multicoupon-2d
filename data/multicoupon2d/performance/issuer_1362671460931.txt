@@ -1,0 +1,30 @@
+#Customer issues a new multicoupon + merchant claims redeemed coupons
+#Thu Mar 07 16:51:00 CET 2013
+#-
+#XML
+#Time in miliseconds (ms)
+#t1 	 receiving M1 (issue) or M1 (claim) or M3 (claim)
+#t2 	 decoding M1 (issue)
+#t3 	 managing M1 and building M2 (issue)
+#t4 	 encoding M2 (issue)
+#t5 	 sending M2 (issue)
+#t6 	 receiving M3 (issue)
+#t7 	 decoding M3 (issue)
+#t8 	 managing M3 and building M4 (issue)
+#t9 	 encoding M4 (issue)
+#t10 	 sending M4 (issue)
+#t11 	 decoding M1 (claim)
+#t12 	 managing M1 and building M2 (claim)
+#t13 	 encoding M2 (claim)
+#t14 	 sending M2 (claim)
+#t15 	 decoding M3 (claim)
+#t16 	 managing M3 and building M4 (claim)
+#t17 	 encoding M4 (claim)
+#t18 	 sending M4 (claim)
+#proto 	 it 	 t1 	 t2 	 t3 	 t4 	 t5 	 t6 	 t7 	 t8 	 t9 	 t10 	 t11 	 t12 	 t13 	 t14 	 t15 	 t16 	 t17 	 t18
+claim1	0	39	null	null	null	null	null	null	null	null	null	73	45	1	0	null	null	null	null	
+claim2	0	20	null	null	null	null	null	null	null	null	null	null	null	null	null	13	18	1	0	
+claim1	0	23	null	null	null	null	null	null	null	null	null	9	21	2	0	null	null	null	null	
+claim2	0	12	null	null	null	null	null	null	null	null	null	null	null	null	null	10	15	1	0	
+claim1	0	18	null	null	null	null	null	null	null	null	null	7	13	1	0	null	null	null	null	
+claim2	0	11	null	null	null	null	null	null	null	null	null	null	null	null	null	10	12	1	0	

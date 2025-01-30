@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>multicoupon2d</artifactId>
+        <groupId>cat.uib.secom</groupId>
+        <version>0.0.3-SNAPSHOT</version>
+    </parent>
+    <groupId>cat.uib.secom</groupId>
+    <artifactId>multicoupon2d-client-android</artifactId>
+    <version>0.0.3-SNAPSHOT</version>
+    <packaging>apk</packaging>
+    <name>multicoupon2d-client-android</name>
+
+    <properties>
+        <platform.version>2.3.3</platform.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>${platform.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+        	<groupId>cat.uib.secom</groupId>
+        	<artifactId>multicoupon2d-client</artifactId>
+        	<version>0.0.3-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+        	<groupId>cat.uib.secom</groupId>
+        	<artifactId>multicoupon2d-common</artifactId>
+        	<version>0.0.3-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <sourceDirectory>src</sourceDirectory>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                    <artifactId>android-maven-plugin</artifactId>
+                    <version>3.5.1</version>
+					
+                    <extensions>true</extensions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <configuration>
+                    <sdk>
+                        <!-- platform or api level (api level 4 = platform 1.6)-->
+                        <platform>2.3.3</platform>
+                        <path>/home/apaspai/development/android/sdk</path>
+                    </sdk>
+                </configuration>
+            </plugin>
+            
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                 <version>3.0</version>
+                <configuration>
+                     <source>1.6</source>
+                     <target>1.6</target>
+                 </configuration>
+             </plugin>
+
+        </plugins>
+    </build>
+
+<!--     <build> -->
+<!--         <plugins> -->
+<!--             <plugin> -->
+<!--                 <groupId>com.jayway.maven.plugins.android.generation2</groupId> -->
+<!--                 <artifactId>android-maven-plugin</artifactId> -->
+<!--                 <version>3.1.1</version> -->
+<!--                 <configuration> -->
+<!--                     <androidManifestFile>${project.basedir}/AndroidManifest.xml</androidManifestFile> -->
+<!--                     <assetsDirectory>${project.basedir}/assets</assetsDirectory> -->
+<!--                     <resourceDirectory>${project.basedir}/res</resourceDirectory> -->
+<!--                     <nativeLibrariesDirectory>${project.basedir}/src/main/native</nativeLibrariesDirectory> -->
+<!--                     <sdk> -->
+<!--                         <platform>8</platform> -->
+<!--                         <path>/home/apaspai/development/android/sdk</path> -->
+<!--                     </sdk> -->
+<!--                     <undeployBeforeDeploy>true</undeployBeforeDeploy> -->
+<!--                 </configuration> -->
+<!--                 <extensions>true</extensions> -->
+<!--             </plugin> -->
+
+<!--             <plugin> -->
+<!--                 <artifactId>maven-compiler-plugin</artifactId> -->
+<!--                 <version>2.3.2</version> -->
+<!--                 <configuration> -->
+<!--                     <source>1.6</source> -->
+<!--                     <target>1.6</target> -->
+<!--                 </configuration> -->
+<!--             </plugin> -->
+<!--         </plugins> -->
+<!--     </build> -->
+</project>

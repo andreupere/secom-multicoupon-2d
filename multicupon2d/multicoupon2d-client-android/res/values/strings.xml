@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Multicoupon2D application to test performance</string>
+    <string name="app_name">multicoupon2d-client-android</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_register_group_manager">RegisterGroupManager</string>
+    <string name="title_activity_issuing">IssuingActivity</string>
+    <string name="test_finished">Test finished!</string>
+    <string name="title_activity_multiredeem">MultiredeemActivity</string>
+
+</resources>
